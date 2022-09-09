@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+      theme name: Bangladeshi Software
+      version: 1.0
+      author: @bangladeshisoftware
+     -->
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- FONT-AWESOME -->
+  <script src="https://kit.fontawesome.com/6788eb3be6.js" crossorigin="anonymous"></script>
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>Title</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="bg-white shadow bg-cover bg-center"
+    style="background-image: linear-gradient(to right, #CEF3F3, #cef3f3c2), url('https://www.bangladeshisoftware.com/wp-content/uploads/2019/06/header-bg-copyright.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+    <!-- Header Links -->
+    <div class="container flex justify-between items-center h-20 relative">
+      <a href="index.html">
+        <img class="w-32 xl:w-40" src="assets/images/logo.png" alt="" />
+      </a>
+
+
+      <!-- Header UL -->
+      <button id="toggle_menu" class="text-lg lg:hidden relative z-50"><i class="fa-solid fa-bars"></i></button>
+      <div class="hidden fixed inset-0 m-auto w-full h-full bg-black z-40 bg-opacity-40" id="mobile_header_overlay">
+      </div>
+      <ul id="menu_ul"
+        class="flex lg:items-center fixed lg:static top-20 inset-x-0 mx-auto lg:mx-0 gap-3 flex-col lg:flex-row lg:bg-transparent bg-white w-[90%] lg:w-auto p-6 lg:p-0 rounded shadow-lg lg:border-transparent lg:shadow-none items-start transform scale-y-0 lg:scale-y-100 origin-top z-50 border transition-transform">
+        <li>
+          <a class="flex items-center px-3 h-[44px] rounded text-gray-900 hover:bg-white"
+            href="services.html">Services</a>
+        </li>
+        <li>
+          <a class="flex items-center px-3 h-[44px] rounded text-gray-900 hover:bg-white" href="blogs.html">Blogs</a>
+        </li>
+        <li>
+          <a class="flex items-center px-3 h-[44px] rounded text-gray-900 hover:bg-white" href="team.html">Team</a>
+        </li>
+        <li>
+          <a class="flex items-center px-3 h-[44px] rounded text-gray-900 hover:bg-white"
+            href="investor.html">Investor</a>
+        </li>
+
+        <li class="relative header_sub_parent">
+          <a class="header_sub_ul_toggle flex items-center px-3 h-[44px] rounded text-gray-900 hover:bg-white"
+            href="#">Pages</a>
+          <div
+            class="transition-all transform origin-top scale-y-0 py-2 absolute z-50 top-[100%] inset-x-0 mx-auto w-56 space-y-1">
+            <ul class="bg-white p-3 rounded shadow-xl border">
+              <li><a href="about.html"
+                  class="custom_li_hover hover:text-white rounded shadow-sm px-3 py-2 block w-full">About
+                  US</a></li>
+              <li><a href="contact.html"
+                  class="custom_li_hover hover:text-white rounded shadow-sm px-3 py-2 block w-full">Contact
+                  US</a></li>
+              <li><a href="refund-policy.html"
+                  class="custom_li_hover hover:text-white rounded shadow-sm px-3 py-2 block w-full">Refund
+                  Policy</a></li>
+              <li><a href="privacy-policy.html"
+                  class="custom_li_hover hover:text-white rounded shadow-sm px-3 py-2 block w-full">Privacy
+                  Policy</a></li>
+              <li><a href="terms-and-conditions.html"
+                  class="custom_li_hover hover:text-white rounded shadow-sm px-3 py-2 block w-full">Terms
+                  and Conditions</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a class="flex items-center px-3 h-[44px]" href="signup.html">Signup</a>
+        </li>
+        <li>
+          <a class="flex items-center px-3 h-[44px] text-white space-x-2 rounded focus:ring-1 focus:ring-[#11987d] ring-offset-2 shadow"
+            style="
+                      background-image: conic-gradient(from 1turn, #0e9479, #16a085);
+                    " href="login.html">
+            <span class="text-sm">
+              <i class="fa-solid fa-lock"></i>
+            </span>
+            <span>Login</span>
+          </a>
+        </li>
+
+        <li class="relative">
+          <div class="p-0.5 w-fit h-fit bg-gray-100 rounded-md hover:from-transparent transition-all">
+            <button id="dashboard_options_handler"
+              class="flex items-center gap-x-2 px-3 h-[44px] rounded bg-white hover:bg-gray-100 transition-all focus:ring-2 ring-offset-2 focus:ring-gray-200"
+              href="#">
+
+              <a href="cart.html" class="mr-1 relative flex items-center gap-x-1 text-sm">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart_items_wrapper"> </span>
+              </a>
+              <small>Shamim Reza</small>
+              <img class="w-7 h-7 rounded-full" src="https://i.ibb.co/Ryr9PQB/index.jpg" alt="" />
+              <small class="block transition-all transform rotate-180">
+                <i class="fa-solid fa-chevron-up"></i>
+              </small>
+            </button>
+          </div>
+
+          <div id="dashboard_options"
+            class="absolute w-full rounded h-fit bg-white shadow top-[105%] inset-x-0 mx-auto transition-all transform origin-top scale-y-0 z-50">
+            <div class="flex flex-col py-2">
+              <a href="dashboard.html" class="flex items-center gap-x-1 w-full px-3 py-3 hover:bg-gray-100">
+                <span class="block min-w-[20px] max-w-[20px]"><i class="fa-solid fa-gauge"></i></span>
+                <span>Dashboard</span>
+              </a>
+
+              <a href="##" class="flex items-center gap-x-1 w-full px-3 py-3 hover:bg-gray-100">
+                <span class="block min-w-[20px] max-w-[20px]"><i class="fa-solid fa-sign-out"></i></span>
+                <span>Logout</span>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+    <!-- Sub Header -->
+    <div class="container2 space-y-6 pt-12">
+      <!-- Page name Title -->
+      <h3 class="text-4xl font-medium tracking-wide">
+        Lorem ipsum dolor sit amet.
+      </h3>
+
+      <!-- Page Tree Links -->
+      <div class="items-center justify-start space-x-2 text-gray-500">
+
+        <a style="background-image: conic-gradient(from 1turn, #0e9479, #16a085)"
+          class="text-white px-4 py-1.5 rounded shadow-sm" href="index.html">
+          <i class="fa-solid fa-house"></i>
+        </a>
+
+        <small class="text-xs"> <i class="fa-solid fa-chevron-right"></i></small>
+
+        <a style="background-image: conic-gradient(from 1turn, #0e9479, #16a085)"
+          class="text-white px-4 py-1.5 rounded shadow-sm" href="item.html"> item title here
+        </a>
+
+      </div>
+      <br>
+      <!-- Basic Info -->
+      <div class="flex items-center flex-wrap gap-x-6 gap-y-3 text-xs sm:text-base mt-12 ">
+        <p class="text-gray-500 flex items-center gap-x-1">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>21 sales</span>
+        </p>
+        <p class="text-green-600 flex items-center gap-x-1">
+          <span>Recently Updated</span>
+          <i class="fa-solid fa-circle-check"></i>
+        </p>
+        <p class="text-green-600 flex items-center gap-x-1">
+          <span>Well Documented</span>
+          <i class="fa-solid fa-circle-check"></i>
+        </p>
+      </div>
+
+      <!-- Reviews&Comments -->
+      <div class="flex items-center justify-start pt-6 overflow-auto" style="margin-bottom:-2px;">
+
+        <a href="#" data-item="item_details" class="item_content_toggler active flex items-center gap-x-1 px-6 py-3">
+          <span class="font-normal tracking-wide">Item</span>
+          <span class="font-normal tracking-wide">Details</span>
+        </a>
+
+        <a href="#" data-item="item_reviews" class="item_content_toggler flex items-center gap-x-2 px-6 py-3">
+          <span class="font-normal tracking-wide">Reviews</span>
+          <p class="relative text-sm h-fit w-fit flex items-center justify-center text-gray-200">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span style="width:88%"
+              class="absolute text-sm left-0 inset-y-0 my-auto flex overflow-hidden text-yellow-500">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </span>
+          </p>
+          <span>4.3</span>
+          <span class="px-2 text-xs py-1 rounded bg-cyan-700 text-white shadow block">21</span>
+        </a>
+
+        <a href="#" data-item="item_comments" class="item_content_toggler flex items-center gap-x-2 px-6 py-3">
+          <span class="font-normal tracking-wide">Comments</span>
+          <span class="px-2 text-xs py-1 rounded bg-cyan-700 text-white shadow block">21</span>
+        </a>
+
+      </div>
+    </div>
+  </header>
+
+
+  <main class="min-h-screen bg-gray-50 ">
+    <div class="flex items-start">
+      <div class="container2 flex flex-col lg:flex-row gap-y-6 lg:gap-y-0 gap-x-12 relative">
+
+        <!-- Theme Content -->
+        <div class="w-full pt-12">
+
+          <!-- Item Details -->
+          <div data-item="item_details" class="item_content w-full space-y-6">
+            <!-- Theme Thumbnail -->
+            <div style="box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+            rgba(0, 0, 0, 0.06) 0px 0px 0px 1px !important;" class="bg-white border p-4">
+              <a href="#" class="block w-full">
+                <img class="w-full"
+                  src="https://themeforest.img.customer.envatousercontent.com/files/398879361/Preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=3b0e5cf150cad45010303b0172d5083b"
+                  alt="">
+              </a>
+
+              <div class="pt-6 pb-4 gap-x-4 flex-wrap flex justify-center">
+                <a href=""
+                  class="block px-4 py-2 rounded bg-blue-500 hover:bg-blue-600 focus:ring-2 ring-blue-500 focus:ring-offset-2 w-fit  text-white tracking-wide space-x-1">
+                  <span>Live Preview</span>
+                  <i class="fa-regular fa-eye"></i>
+                </a>
+
+                <a href=""
+                  class=" block px-4 py-2 rounded bg-gray-500 hover:bg-gray-500 focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 w-fit text-white tracking-wide space-x-1">
+                  <span>Screenshots</span>
+                  <i class="fa-solid fa-image"></i>
+                </a>
+
+
+                <div class="flex gap-x-0.5 flex-wrap">
+                  <a href=""
+                    class=" block px-3 py-2 rounded-l bg-gray-500 hover:bg-gray-500 focus:ring-2 focus:ring-gray-300 focus:ring-offset-1 w-fit text-white tracking-wide space-x-1">
+                    <span>Share</span>
+                    <i class="fa-solid fa-share"></i>
+                  </a>
+
+                  <a href=""
+                    class="w-9 py-2 bg-gray-500 hover:bg-gray-500 focus:ring-2 focus:ring-gray-300 focus:ring-offset-1 flex justify-center items-center text-white tracking-wide space-x-1"><i
+                      class="fa-brands fa-facebook-f"></i>
+                  </a>
+
+                  <a href=""
+                    class="w-9 py-2 rounded-r bg-gray-500 hover:bg-gray-500 focus:ring-2 focus:ring-gray-300 focus:ring-offset-1 flex justify-center items-center text-white tracking-wide space-x-1"><i
+                      class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+            <!-- Others Theme Content -->
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat veniam ipsam nam, mollitia maxime
+              excepturi saepe vero voluptates beatae deserunt molestiae est, odit minima dolores nihil recusandae animi,
+              perspiciatis dolorem. Culpa obcaecati illo asperiores! Mollitia ad aliquid nobis quis voluptates neque
+              odio illum ratione, incidunt, quos accusantium quia deserunt expedita. Dicta atque sequi excepturi
+              aspernatur error culpa laborum illum pariatur in quasi, maxime tempore animi reiciendis, a sed, neque
+              voluptates amet fugiat blanditiis. Maxime, est, aliquam quis ut illo adipisci libero accusantium nemo quos
+              amet officiis enim cupiditate unde ea id assumenda! Rerum repellendus fuga ullam cumque maiores nesciunt
+              nostrum debitis ea voluptate, itaque, sunt eligendi non unde. Placeat magni maiores et debitis quae
+              laborum. Labore nulla soluta nobis, est nesciunt odit unde alias nostrum temporibus, laudantium
+              repellendus quo autem et? Incidunt eum facere vitae exercitationem maxime nemo consequatur. Quod error
+              temporibus soluta fugiat? Tenetur repellat tempore reiciendis vel modi odio aliquam nobis excepturi
+              voluptatum quos, repudiandae itaque sed possimus nulla minus soluta laborum quasi blanditiis doloremque
+              alias dolores, dignissimos hic accusamus cum. Eos ea rem at voluptatibus! Aut ratione suscipit recusandae
+              saepe incidunt, voluptas cupiditate, ab est assumenda, eveniet vitae vel doloribus. Repudiandae aliquam
+              facere voluptate ratione impedit enim asperiores similique illum placeat vitae laudantium voluptates animi
+              saepe est, rerum autem harum et, in dolore odit maiores non quis exercitationem nostrum. Fugiat nisi ullam
+              voluptates quo, ea fugit saepe odit dolor quia corporis. Accusamus nesciunt itaque neque porro, iure
+              tempore expedita voluptate repellat possimus consectetur recusandae dicta laboriosam? Deleniti ut quam
+              earum atque fugit error omnis ex aspernatur voluptatibus facere. Odio pariatur similique beatae, amet
+              officia architecto quae mollitia illum et suscipit aliquam adipisci doloribus porro molestiae nostrum
+              minus harum asperiores culpa eum. Dolorem iure rem sed commodi. Modi libero perferendis exercitationem
+              similique, iste consectetur ab aspernatur. Inventore porro perspiciatis, accusamus eaque quasi quisquam
+              excepturi explicabo consequatur! Architecto blanditiis excepturi expedita dignissimos iure? Molestias,
+              quidem natus. Non reprehenderit repellat quibusdam praesentium pariatur dolore ut optio nostrum tempora
+              voluptatibus debitis at id repudiandae placeat vel quaerat quos accusantium numquam eligendi, perspiciatis
+              et. In, nobis. Voluptate delectus quos, reprehenderit minus ullam doloremque sit, vitae ut, officia
+              cupiditate voluptates quas repudiandae adipisci repellat quam eligendi amet quo. Voluptas deleniti aperiam
+              facilis. Ut cumque est dolor porro minus nostrum quaerat inventore, corporis facilis sunt cum ex
+              blanditiis quas. Voluptatibus dolor necessitatibus earum? Delectus, earum eaque vitae repellendus est
+              tenetur explicabo temporibus id doloribus, illum officiis tempora harum qui quibusdam sit iste quas error
+              voluptatum? Quis explicabo provident necessitatibus omnis quod ipsam vitae, esse adipisci aut accusamus
+              ratione distinctio eligendi commodi neque aperiam sapiente quas eius illum ipsum doloribus perferendis qui
+              maxime in architecto? Atque, culpa tenetur odit dolore cupiditate sapiente molestias laborum id corrupti
+              exercitationem iure repellendus aperiam ducimus. Culpa eveniet a aspernatur maiores aliquid tempora totam
+              in cumque rem, obcaecati possimus ex temporibus assumenda porro repudiandae amet similique rerum omnis
+              pariatur officia harum suscipit. Voluptatum perferendis, quis itaque expedita reiciendis veniam suscipit
+              hic ipsa incidunt explicabo nesciunt voluptatibus sapiente excepturi dolores numquam unde quo quaerat
+              rerum veritatis? Ex atque illum deleniti fugiat consequuntur nulla praesentium sint, molestias dicta quis
+              alias incidunt inventore officiis modi quia voluptatum omnis, fugit excepturi! Eos itaque est cupiditate
+              non facilis alias recusandae illum praesentium pariatur, excepturi repudiandae provident ullam nostrum id
+              amet aut hic ex laudantium dignissimos a facere! Harum cumque possimus, in temporibus repellat aspernatur
+              vitae sequi? Quo totam libero fugiat neque, adipisci possimus quaerat qui perferendis laborum cumque
+              veniam! Tenetur exercitationem eligendi assumenda dicta? Recusandae tempora deserunt magni, libero culpa
+              ab mollitia, molestiae at ullam modi, ad iure. Rem praesentium vero minus vitae, illo ipsam nesciunt
+              pariatur, fugit explicabo minima quidem voluptates recusandae commodi tempora quod laudantium tenetur
+              eaque magnam obcaecati sed aliquid voluptatum suscipit voluptate. Atque, iure maiores! Amet non reiciendis
+              magnam aut, illum quam esse fugiat voluptatum ullam! Accusamus consequuntur, vero doloremque aliquid
+              laboriosam nisi quos quam, placeat itaque necessitatibus numquam autem fugiat eius ab dolorem. Maxime,
+              aperiam quis dolorum a esse harum eaque quibusdam quia dignissimos! Corporis, nobis adipisci at dolor
+              quidem voluptatem fuga, repellendus, atque ut ab vel accusamus sequi impedit officia tempora mollitia eos
+              velit! Unde dolorem aspernatur est eligendi alias eveniet. Facere iusto fugit quo blanditiis illo alias
+              non porro expedita vitae a dignissimos magni accusantium minus debitis id aperiam similique cupiditate
+              eligendi possimus cumque sint deserunt, ad esse nesciunt. Labore dolorem id est quos a amet, rerum
+              inventore cumque sed sit at aspernatur? Cum ullam ex saepe delectus minima assumenda, illum id, facilis
+              sunt quae nisi. Voluptatem blanditiis ut officia neque ipsum nulla quasi vero veniam perspiciatis?
+              Consequatur, enim odio. Eius inventore quos deserunt a ea. Quam, maxime totam nulla veritatis sunt
+              repudiandae, ut fugit in ipsa pariatur voluptatum delectus, dolorem eaque dolor quibusdam sit architecto
+              quasi aut! Expedita minima quibusdam fugit asperiores accusamus perspiciatis vero nesciunt! Animi
+              repudiandae nihil sint dicta, quibusdam, dolores laborum mollitia, repellendus ullam porro quia quo
+              molestias doloremque cum at. Debitis, voluptate. Sint assumenda eos optio ullam ab quae ducimus itaque sit
+              rerum, officia tenetur asperiores sed dolorum distinctio, esse eius modi. Illo ipsum iste animi voluptate
+            </div>
+
+
+            <div>
+              porro ex amet, sequi aliquid. Obcaecati, pariatur quis. Recusandae cum eligendi iste laboriosam numquam
+              veniam quos dolor! Adipisci odit molestiae animi cum numquam suscipit architecto, illo ullam vel
+              consequuntur laborum commodi enim iusto. Debitis a tempora blanditiis? Praesentium architecto labore rem
+              nam, velit iusto dolorum consectetur optio a sequi amet quibusdam ullam nesciunt. Rerum magni quisquam
+              labore error nulla, corporis id consectetur non consequuntur quas blanditiis ea laborum totam incidunt
+              harum at ipsum aperiam iusto officiis assumenda. Quae perferendis repudiandae, tempore fuga quo sapiente
+              recusandae error, excepturi quia itaque eos qui cupiditate quam, natus mollitia sunt eum amet dolore.
+              Natus earum ipsam facere libero deserunt voluptates tenetur. Rerum impedit, dolorum voluptate illum ipsam
+              accusantium modi incidunt itaque facere omnis architecto alias laborum reprehenderit amet corporis fuga
+              ipsum est nihil numquam doloribus aliquid optio? Obcaecati in vitae non quo beatae at? Molestias, iste
+              libero obcaecati nemo impedit perspiciatis ut harum minima corporis earum eos aliquid nobis odit eum ullam
+              delectus, nesciunt ab possimus? Repudiandae, excepturi mollitia. Aut modi facilis placeat, id veniam
+              ducimus commodi quos dolores voluptatem. Commodi impedit sapiente tenetur dolores architecto explicabo
+              vitae omnis mollitia aperiam natus doloribus, necessitatibus odio rem voluptates aliquam modi suscipit
+              nisi. Possimus, laborum provident. Temporibus, consequatur possimus! Perspiciatis quae debitis atque vero
+              sed omnis ex corporis quod, beatae, culpa id voluptates officiis. Assumenda nihil, minus, ea ipsam est,
+              cupiditate voluptate mollitia eveniet eligendi voluptatem possimus vel illo esse adipisci. Iusto quas
+              explicabo placeat numquam ut repudiandae fuga cumque exercitationem deleniti maxime neque libero, minus
+              nulla ducimus. Saepe vero debitis impedit magnam quidem esse natus quod ea, reprehenderit autem laborum
+              culpa consequatur pariatur labore odio quibusdam quis numquam soluta nostrum est minima laudantium ullam
+              corporis ex! Praesentium enim mollitia quia. Sunt officia at, quidem optio voluptatibus quo fuga
+              doloremque consectetur architecto est ullam dolore quibusdam, nihil veritatis iure? Aspernatur, atque
+              officia hic dolore exercitationem consectetur? Dolor doloribus molestias iure praesentium excepturi?
+              Delectus in sequi quaerat ipsa dignissimos. Eius quibusdam illo quas dolorum recusandae obcaecati eveniet.
+              Corrupti excepturi delectus ipsa perspiciatis cum voluptatibus soluta suscipit numquam nesciunt, assumenda
+              unde laboriosam, nisi animi similique eius mollitia libero alias eveniet? Iure vitae laudantium in
+              recusandae eius voluptatibus veniam facere fugit excepturi nobis pariatur, possimus vel quibusdam nulla.
+              Accusantium, ratione laborum sunt temporibus modi, quo praesentium voluptatem possimus tempore porro
+              dolorem rerum culpa rem quisquam maxime nostrum. Assumenda modi non tempore? Nam eius mollitia corrupti
+              labore est quo laboriosam quia maxime aliquam et! Consectetur at illo, delectus assumenda perferendis eius
+              repudiandae maxime! Deserunt debitis provident facere exercitationem tempora, quaerat consequuntur quos
+              sapiente quisquam eos dolor illo distinctio laboriosam molestiae amet similique voluptates! Sint
+              voluptatibus id veniam in, cumque ut harum voluptatum, tempore, iure soluta qui? Deleniti possimus aperiam
+              debitis odio vitae magni dolore ducimus eos ipsa esse nulla architecto, id reprehenderit magnam et ullam
+              numquam asperiores eum? Laudantium deserunt, quia saepe excepturi illo magni voluptate fugit provident
+              commodi nihil soluta dolorem culpa. Voluptatem omnis impedit debitis ex quidem dolorem, reiciendis non
+              consectetur optio beatae doloribus dignissimos quo modi inventore porro, eius labore aut illum fugit
+              voluptas est ratione. Obcaecati veniam ea aliquam voluptatum. Tenetur nostrum incidunt temporibus sunt
+              dicta quis quidem illo, molestias voluptatum autem nulla, reprehenderit aspernatur iusto suscipit repellat
+              sint praesentium ea harum? Rerum eos quia ut non error impedit laudantium modi provident dolores animi,
+              corrupti culpa tempore maxime, perspiciatis incidunt in eveniet saepe facilis temporibus molestias quae
+              sapiente quasi dolorum tempora! Impedit fuga, laborum quam nulla pariatur tenetur illo, voluptatem dolor
+              perspiciatis adipisci quaerat vitae iure facilis et quisquam assumenda expedita nihil inventore odit magni
+              harum eveniet quasi! Dicta, non magni ipsum assumenda odio voluptatem blanditiis veniam iste voluptas,
+              magnam ducimus nihil enim sit, error corrupti. Minima perferendis commodi repellat rerum, temporibus
+              excepturi totam maxime necessitatibus vero accusantium voluptates hic in saepe perspiciatis inventore
+              eveniet a. Magni qui odit autem facere consequuntur dolore repellat sapiente. Unde tenetur quam
+              repellendus maxime voluptates possimus obcaecati, repellat provident. Tempore tenetur culpa quis repellat
+              exercitationem velit, vel veniam nostrum hic expedita aut ad molestias suscipit, iusto sed minima cumque
+              nobis vero quibusdam repudiandae esse delectus? Animi fugit quod aut odio! Libero, neque ipsum? Ad maiores
+              blanditiis culpa magni perspiciatis numquam labore, deleniti velit, dolor quaerat molestias ex praesentium
+              earum, ipsam officia provident amet fuga odio hic expedita optio distinctio deserunt corporis minus. Odit
+              illo odio sit atque fugit earum libero cum dolor provident a, delectus veritatis ducimus debitis nihil
+              fuga! Eos, aliquid nam voluptate omnis sint aspernatur provident iusto tempore dolore ab, voluptatem,
+              asperiores eaque quas facere impedit. Iste quaerat ex, laborum nesciunt, explicabo cum, aperiam incidunt
+              dignissimos excepturi nobis qui natus alias minima ut consequatur magnam eaque adipisci vel sunt pariatur
+              animi? Non est cupiditate iusto vero, vel repellat commodi alias nulla nemo, sint eligendi aliquam facere
+              repellendus, et maiores! Sapiente necessitatibus consequuntur eveniet vero modi quae fugiat inventore
+              ipsum. Ullam, facere, non, laboriosam tempore recusandae officiis vel qui aspernatur nihil iure molestiae
+              veritatis doloremque dicta commodi placeat harum possimus numquam eligendi voluptate esse consequatur
+              corporis! Praesentium quibusdam dolorum consequuntur incidunt tempore assumenda, dignissimos, suscipit eos
+              laudantium quidem nam error. Asperiores deleniti assumenda officiis quae perferendis quos! Nobis soluta
+              consectetur similique hic vitae ipsa dignissimos facere delectus aperiam illum molestias doloribus,
+              voluptatum debitis voluptas. Reprehenderit quidem repellendus nam accusantium fugit, veniam consectetur.
+              Corrupti perspiciatis corporis saepe fugit deserunt, numquam incidunt modi quae impedit consectetur
+              dolorum explicabo consequuntur, dolorem officia eos temporibus nulla magnam hic consequatur quaerat? Amet
+              dolore nemo iusto officiis expedita, eligendi ab beatae deserunt impedit esse fugit. Molestias temporibus
+              veritatis quis beatae necessitatibus dicta nam sit deleniti odit provident ea blanditiis laborum ad unde,
+              libero, iusto saepe vel maxime ut. Nam totam quos sit. Nostrum quam soluta quia ipsum quod voluptatem a
+              nam, quaerat ullam repudiandae doloribus nihil delectus voluptates sit incidunt doloremque reprehenderit!
+              Impedit facilis voluptas laboriosam autem dicta? Veritatis earum amet, quos, at cum et nisi tenetur
+              possimus magnam pariatur sunt quae dolores similique ut tempore unde dolorum ducimus praesentium soluta?
+              Sed mollitia qui iste, provident fuga distinctio itaque consequuntur in iusto unde. Ipsa laudantium
+              debitis pariatur quasi minima. Vitae fugiat dolor, at aut delectus, quod voluptatibus illum mollitia ad
+              suscipit recusandae? Corporis voluptate mollitia perferendis quidem rerum quis soluta, maxime reiciendis
+              aperiam nisi, aut molestiae officia eligendi natus. Alias voluptatibus harum quas molestiae neque
+              quibusdam iure saepe sequi voluptates, praesentium dolorem deserunt explicabo consequuntur labore rerum, a
+              laboriosam. Ullam facilis cupiditate, beatae laudantium ipsa aspernatur iure, ducimus voluptatibus
+              possimus temporibus, eaque ratione molestiae minima. Id in ratione at ducimus maiores, blanditiis cumque,
+              distinctio aperiam, porro minus qui ab tempore repellendus asperiores! Maiores enim culpa hic possimus
+              eius. Corrupti aliquid et sint porro nostrum voluptatibus sed illo soluta dignissimos. Iusto fugiat
+              perferendis error in quae voluptatem illum odio? Id excepturi adipisci voluptates fugit incidunt dicta a
+              minima. Voluptas fugiat saepe assumenda deleniti veniam eligendi numquam quia ducimus et natus libero qui
+              officia dignissimos corrupti minima architecto, ut hic animi tempora voluptatum. Inventore harum ea,
+              deserunt omnis, quisquam libero officia dolore qui quidem aperiam molestiae dicta. Quod, veritatis
+              perspiciatis perferendis, repudiandae quasi adipisci quae nemo magni voluptatem aliquid non inventore?
+              Nemo sed illum temporibus dolorum tempora ut laborum odio libero repellat ratione, magni accusantium
+              placeat quae quis adipisci deleniti hic dolore dolorem quibusdam voluptatum labore. Illum est consequatur
+              quia, quos porro dolore accusamus voluptates culpa quae similique et animi fugit pariatur eum eos dolorem
+              ex doloribus, possimus nulla repellendus expedita. Consequatur aut explicabo consequuntur maxime, impedit
+              minima assumenda blanditiis illo dolorem quasi ut delectus dolore officiis, vitae nisi, eligendi velit
+              ipsum! Fugit, laboriosam nulla. Tenetur, saepe? Sit consequatur unde doloribus blanditiis voluptatum dicta
+              vel molestiae laborum ab? Modi illum dolorum iste fuga id inventore nobis nam impedit architecto beatae
+              facilis voluptatibus nostrum quidem laboriosam facere ipsam illo, molestias consequatur placeat rem natus.
+              Qui, nesciunt quisquam. Necessitatibus vero dolorum earum dolorem odio dicta, quis debitis voluptatum
+              dolore saepe voluptates nulla sint cum in nihil non repudiandae iusto eos quam neque doloremque omnis
+              distinctio et assumenda. Eius praesentium tempora rerum impedit eligendi nam. Sunt impedit assumenda dicta
+              quis? Voluptatem quis quibusdam quasi corporis. Ab, repellendus quis eius dolores ipsa ullam perferendis
+              impedit magni iusto adipisci vel ratione sequi, aliquid optio illo temporibus! Eveniet maiores natus
+              consectetur accusantium voluptate error sed qui optio aspernatur consequatur. Ex quia eveniet aliquid
+              voluptas quo possimus ut quidem quod consequuntur quos?
+            </div>
+
+          </div>
+
+          <!-- Item Reviews -->
+          <div data-item="item_reviews" class="item_content hidden">
+
+            <div class="flex justify-between items-center">
+              <h3 class="flex items-center gap-x-3 text-xl font-medium"> <span>21 Reviews</span>
+                <p class="relative text-sm h-fit w-fit flex items-center justify-center text-gray-200">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span style="width:88%"
+                    class="absolute text-sm left-0 inset-y-0 my-auto flex overflow-hidden text-yellow-500">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+              </h3>
+
+              <select
+                class="border-4 w-52 ring-2 py-1 text-sm bg-white border-white rounded ring-gray-300 focus:ring-gray-500 outline-none">
+                <option value="">Sort by Newest</option>
+                <option value="">Sort by Highest Rating</option>
+                <option value="">Sort by Lowest Rating</option>
+              </select>
+            </div>
+
+            <!-- reiviews -->
+            <div class="pt-6 space-y-4">
+              <!-- review -->
+              <div class="rounded border overflow-hidden">
+                <div class="flex items-center justify-between bg-gray-100 p-4">
+                  <p class="relative text-sm h-fit w-fit flex items-center justify-center text-gray-200">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span style="width:100%"
+                      class="absolute text-sm left-0 inset-y-0 my-auto flex overflow-hidden text-yellow-500">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </p>
+
+                  <p> by <a href="#" class="hover:underline text-blue-800">stacksagar</a> 1 month ago </p>
+                </div>
+                <p class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae fugiat consequuntur
+                  natus? Molestiae
+                  quos assumenda totam non magnam alias odio illo perspiciatis, soluta maxime hic accusantium, optio
+                  vitae. Quasi, voluptates!</p>
+              </div>
+
+              <!-- review -->
+              <div class="rounded border overflow-hidden">
+                <div class="flex items-center justify-between bg-gray-100 p-4">
+                  <p class="relative text-sm h-fit w-fit flex items-center justify-center text-gray-200">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span style="width:80%"
+                      class="absolute text-sm left-0 inset-y-0 my-auto flex overflow-hidden text-yellow-500">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </p>
+
+                  <p> by <a href="#" class="hover:underline text-blue-800">munna</a> 10 days ago </p>
+                </div>
+                <p class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae fugiat consequuntur
+                  natus? Molestiae
+                  quos assumenda totam non magnam alias odio illo perspiciatis, soluta maxime hic accusantium, optio
+                  vitae. Quasi, voluptates!</p>
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <!-- Item Comments -->
+          <div data-item="item_comments" class="item_content hidden">
+            <div class="flex justify-between items-center">
+              <h3 class="flex items-center gap-x-3 text-xl font-medium"> <span>14 Comments found.</span>
+
+              </h3>
+
+              <select
+                class="border-4 w-52 ring-2 py-1 text-sm bg-white border-white rounded ring-gray-300 focus:ring-gray-500 outline-none">
+                <option value="">Sort by Newest</option>
+                <option value="">Sort by Highest Rating</option>
+                <option value="">Sort by Lowest Rating</option>
+              </select>
+            </div>
+
+            <!-- comments -->
+            <div class="pt-6 space-y-3">
+              <div class="border rounded overflow-hidden">
+
+                <div class="p-4 border-b bg-gray-50">
+                  <div class="overflow-hidden flex items-center justify-between">
+                    <a href="#" class="flex items-center gap-x-3 text-blue-500 font-medium">
+                      <img class="w-10 h-10 object-contain rounded-full"
+                        src="https://randomuser.me/api/portraits/men/22.jpg" alt="">
+                      <span>John Doe</span>
+                    </a>
+                    <small>1 month ago</small>
+                  </div>
+                  <p class="mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quam suscipit
+                    dicta, ab in
+                    laborum a iure, quibusdam velit eos distinctio dolorem!</p>
+                </div>
+
+                <div class="pl-8 pr-4 py-4">
+                  <div class="overflow-hidden flex items-center justify-between">
+                    <a href="#" class="flex items-center gap-x-3 text-blue-500 font-medium">
+                      <img class="w-10 h-10 object-contain rounded-full" src="https://i.ibb.co/Ryr9PQB/index.jpg"
+                        alt="">
+                      <span>Steve</span>
+                    </a>
+                    <small>1 month ago</small>
+                  </div>
+                  <p class="mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quam suscipit
+                    dicta, ab in
+                    laborum a iure, quibusdam velit eos distinctio dolorem!</p>
+                </div>
+
+              </div>
+
+              <div class="border rounded overflow-hidden">
+
+                <div class="p-4 border-b bg-gray-50">
+                  <div class="overflow-hidden flex items-center justify-between">
+                    <a href="#" class="flex items-center gap-x-3 text-blue-500 font-medium">
+                      <img class="w-10 h-10 object-contain rounded-full"
+                        src="https://randomuser.me/api/portraits/men/23.jpg" alt="">
+                      <span>Steve Smith</span>
+                    </a>
+                    <small>1 month ago</small>
+                  </div>
+                  <p class="mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quam suscipit
+                    dicta, ab in
+                    laborum a iure, quibusdam velit eos distinctio dolorem!</p>
+                </div>
+
+                <div class="pl-8 pr-4 py-4">
+                  <div class="overflow-hidden flex items-center justify-between">
+                    <a href="#" class="flex items-center gap-x-3 text-blue-500 font-medium">
+                      <img class="w-10 h-10 object-contain rounded-full" src="https://i.ibb.co/Ryr9PQB/index.jpg"
+                        alt="">
+                      <span>Shamim Reza</span>
+                    </a>
+                    <small>1 month ago</small>
+                  </div>
+                  <p class="mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quam suscipit
+                    dicta, ab in
+                    laborum a iure, quibusdam velit eos distinctio dolorem!</p>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- RightBar Info -->
+        <div class="w-full lg:min-w-[350px] lg:w-[350px]">
+
+          <div class="w-full sticky top-0 pt-12">
+            <!-- Price&Cart-Button area -->
+            <div style="box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px !important;" class="w-full border p-6 space-y-5">
+              <div class="flex justify-between items-center relative">
+                <button class="toggle_license" class="font-medium text-lg">
+                  <span class="item_title">Regular Price</span>
+                  <small class="text-gray-500"><i class="fa-solid fa-caret-down"></i></small>
+                </button>
+                <div class="relative">
+                  <div class="flex items-start text-gray-800 absolute right-0 -top-5">
+                    <span class="text-sm">$.</span>
+                    <del class="text-base font-medium tracking-wide items_del_price">44</del>
+                  </div>
+                  <div class="flex items-start text-green-600">
+                    <span class="text-sm">$.</span>
+                    <h4 class="text-xl font-semibold tracking-wide items_price">33</h4>
+                  </div>
+                </div>
+
+                <div
+                  class="hidden item_licenses absolute top-[115%] inset-x-0 z-40 max-w-[350px] border shadow bg-white rounded">
+                  <div data-title="Regular License" data-price="33" data-oldprice="44"
+                    class="item_license p-5 border-b cursor-pointer hover:bg-gray-100 group">
+                    <div class="flex justify-between items-center">
+                      <h4 class="text-base font-semibold">Regular License</h4>
+                      <h2 class="flex items-start">
+                        <small>$</small>
+                        <span class="text-xl font-semibold text-gray-900">33</span>
+                      </h2>
+                    </div>
+                    <p class="text-gray-600 py-1 text-sm font-normal">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum reiciendis beatae, nulla maxime
+                      animi accusamus.
+                    </p>
+
+                    <div
+                      class="absolute -top-2 -z-10 rounded left-4 w-4 h-4 bg-white group-hover:bg-gray-100 border-l border-t transform rotate-45">
+                    </div>
+                  </div>
+
+                  <div data-title="Regular License" data-price="250" data-oldprice="400"
+                    class="item_license p-5 border-b cursor-pointer hover:bg-gray-100">
+                    <div class="flex justify-between items-center">
+                      <h4 class="text-base font-semibold">Extended License</h4>
+                      <h2 class="flex items-start">
+                        <small>$</small>
+                        <span class="text-xl font-semibold text-gray-900">300</span>
+                      </h2>
+                    </div>
+                    <p class="text-gray-600 py-1 text-sm font-normal">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum reiciendis beatae, nulla maxime
+                      animi accusamus.
+                    </p>
+                  </div>
+
+                  <div class="px-5 py-3">
+                    <a href="#" class="text-blue-500 hover:underline text-center block text-sm">View license details</a>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div class="w-full border-b"> </div>
+
+
+              <ul class="space-y-2 text-sm">
+                <li class="flex text-sm items-center justify-start gap-x-3 text-gray-600">
+                  <small>
+                    <i class="fa-solid fa-check"></i>
+                  </small>
+                  <span> Quality checked! </span>
+                </li>
+                <li class="flex text-sm items-center justify-start gap-x-3 text-gray-600">
+                  <small>
+                    <i class="fa-solid fa-check"></i>
+                  </small>
+                  <span>Future updates!</span>
+                </li>
+                <li class="flex text-sm items-center justify-start gap-x-3 text-gray-600">
+                  <small>
+
+                    <i class="fa-solid fa-check"></i>
+                  </small>
+                  <span> 8 Month Support from us! </span> </li>
+              </ul>
+
+              <button
+                class="w-full h-11 flex items-center justify-center rounded focus:ring-2 ring-green-600 ring-offset-2 bg-green-600 text-white gap-x-2">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Buy Now</span>
+              </button>
+
+            </div>
+
+            <br>
+
+            <!-- Necessary Information -->
+            <div style="box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px !important;" class="border bg-white p-4 space-y-4">
+
+              <div class="flex justify-between items-start w-full gap-x-3">
+                <p class="w-6/12 h-auto block font-medium">
+                  Last Update
+                </p>
+                <a href="#" class="w-6/12 block font-normal text-sm">
+                  30 Aug 2022
+                </a>
+              </div>
+
+              <div class="flex justify-between items-start w-full gap-x-3">
+                <p class="w-6/12 h-auto block font-medium">
+                  Published
+                </p>
+                <a href="#" class="w-6/12 block font-normal text-sm">
+                  20 Jul 2022
+                </a>
+              </div>
+
+              <div class="flex justify-between items-start w-full gap-x-3">
+                <p class="w-6/12 h-auto block font-medium">
+                  Compatible Browsers
+                </p>
+                <a href="#" class="w-6/12 block font-normal text-sm">
+                  Edge, Firefox, Chrome, Opera, US Browser, Safari, all modern browser.
+                </a>
+              </div>
+
+              <div class="flex justify-between items-start w-full gap-x-3">
+                <p class="w-6/12 h-auto block font-medium">
+                  Columns
+                </p>
+                <a href="#" class="w-6/12 block font-normal text-sm">
+                  Edge, Firefox, Chrome, Opera, US Browser, Safari, all modern browser.
+                </a>
+              </div>
+
+              <div class="flex justify-between items-start w-full gap-x-3">
+                <p class="w-6/12 h-auto block font-medium">
+                  Documentation
+                </p>
+                <a href="#" class="w-6/12 block font-normal text-sm">
+                  <span> Well Documented </span>
+                  <span class="text-green-600">
+                    <i class="fa-solid fa-check-circle"></i>
+                  </span>
+                </a>
+              </div>
+
+              <div class="flex justify-between items-start w-full gap-x-3">
+                <p class="w-6/12 h-auto block font-medium">
+                  Layout
+                </p>
+                <a href="#" class="w-6/12 block font-normal text-sm">
+                  Full Responsive
+                </a>
+              </div>
+
+            </div>
+
+            <br>
+
+            <div>
+              <h3 class="bg-green-600 text-white p-3 rounded-t">Recommended Products</h3>
+              <div class="bg-[#f3f3f3]">
+
+                <a href="item.html" class="block px-4 py-6 pb-0 hover:bg-green-100">
+                  <div class="flex items-start gap-x-4">
+                    <h2 class="text-base font-semibold text-gray-700 text-left w-7/12">Lorem ipsum dolor amet
+                      consectetur. dolor amet</h2>
+                    <img class="w-5/12"
+                      src="https://themeforest.img.customer.envatousercontent.com/files/398879361/Preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=3b0e5cf150cad45010303b0172d5083b"
+                      alt="">
+                  </div>
+                  <p class="text-gray-500 py-5 border-b">Lorem ipsum dolor sit amet consectetur.</p>
+                </a>
+                <a href="item.html" class="block px-4 py-6 pb-0 hover:bg-green-100">
+                  <div class="flex items-start gap-x-4">
+                    <h2 class="text-base font-semibold text-gray-700 text-left w-7/12">Lorem ipsum dolor amet
+                      consectetur. dolor amet</h2>
+                    <img class="w-5/12"
+                      src="https://themeforest.img.customer.envatousercontent.com/files/398879361/Preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=3b0e5cf150cad45010303b0172d5083b"
+                      alt="">
+                  </div>
+                  <p class="text-gray-500 py-5 border-b">Lorem ipsum dolor sit amet consectetur.</p>
+                </a>
+                <a href="item.html" class="block px-4 py-6 pb-0 hover:bg-green-100">
+                  <div class="flex items-start gap-x-4">
+                    <h2 class="text-base font-semibold text-gray-700 text-left w-7/12">Lorem ipsum dolor amet
+                      consectetur. dolor amet</h2>
+                    <img class="w-5/12"
+                      src="https://themeforest.img.customer.envatousercontent.com/files/398879361/Preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=3b0e5cf150cad45010303b0172d5083b"
+                      alt="">
+                  </div>
+                  <p class="text-gray-500 py-5 border-b">Lorem ipsum dolor sit amet consectetur.</p>
+                </a>
+                <a href="item.html" class="block px-4 py-6 pb-0 hover:bg-green-100">
+                  <div class="flex items-start gap-x-4">
+                    <h2 class="text-base font-semibold text-gray-700 text-left w-7/12">Lorem ipsum dolor amet
+                      consectetur. dolor amet</h2>
+                    <img class="w-5/12"
+                      src="https://themeforest.img.customer.envatousercontent.com/files/398879361/Preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=3b0e5cf150cad45010303b0172d5083b"
+                      alt="">
+                  </div>
+                  <p class="text-gray-500 py-5 border-b">Lorem ipsum dolor sit amet consectetur.</p>
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="bg-white pt-[74px]">
+    <div class="container grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-12">
+
+      <div class="space-y-6">
+        <img class="w-36" src="assets/images/logo.png" alt="">
+        <div class="flex space-x-5">
+          <a href="https://www.facebook.com/bangladeshisoftware"
+            class="bg-blue-600 text-white px-4 py-1 rounded shadow-sm">
+            <i class="fa-brands fa-facebook"></i>
+            <small>Facebook</small>
+          </a>
+          <a href="https://www.facebook.com/bangladeshisoftware"
+            class="bg-red-600 text-white px-4 py-1 rounded shadow-sm">
+            <i class="fa-brands fa-youtube"></i>
+            <small>Youtube</small>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <p>Bangladeshi Software is the biggest Software Company In Bangladesh. We provide any Desktop & Android
+          Software.
+          We Provide 100 Percent Customer Satisfaction Copyright © by SHAMIMLEM.</p>
+      </div>
+
+      <div class="2xl:pl-20">
+        <ul class="w-fit 2xl:mx-auto space-y-4">
+          <li class="space-x-2 text-sm font-medium hover:text-gray-600">
+            <small class="text-xs"><i class="fa-solid fa-chevron-right"></i></small>
+            <a href="dmca.html">DMCA</a>
+          </li>
+
+          <li class="space-x-2 text-sm font-medium hover:text-gray-600">
+            <small class="text-xs"><i class="fa-solid fa-chevron-right"></i></small>
+            <a href="contact.html">Contact US</a>
+          </li>
+          <li class="space-x-2 text-sm font-medium hover:text-gray-600">
+            <small class="text-xs"><i class="fa-solid fa-chevron-right"></i></small>
+            <a href="cookies-policy.html">Cookies Policy</a>
+          </li>
+          <li class="space-x-2 text-sm font-medium hover:text-gray-600">
+            <small class="text-xs"><i class="fa-solid fa-chevron-right"></i></small>
+            <a href="privacy-policy.html">Privacy Policy</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="2xl:pl-20">
+        <ul class="w-fit 2xl:mx-auto space-y-4">
+          <li class="space-x-2 text-sm font-medium hover:text-gray-600">
+            <small class="text-xs"><i class="fa-solid fa-chevron-right"></i></small>
+            <a href="investor.html">Join Investor</a>
+          </li>
+
+
+          <li class="space-x-2 text-sm font-medium hover:text-gray-600">
+            <small class="text-xs"><i class="fa-solid fa-chevron-right"></i></small>
+            <a href="reseller.html">Join Reseller</a>
+          </li>
+
+          <li class="space-x-2 text-sm font-medium hover:text-gray-600">
+            <small class="text-xs"><i class="fa-solid fa-chevron-right"></i></small>
+            <a href="mailto:shamimlem@yahoo.com">shamimlem@yahoo.com</a>
+          </li>
+
+          <li class="space-x-2 text-sm font-medium hover:text-gray-600">
+            <small class="text-xs"><i class="fa-solid fa-chevron-right"></i></small>
+            <a href="tel:+08801719182586">+08801719182586</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="container flex flex-col xl:flex-row w-full justify-between items-center gap-y-4 xl:gap-y-0 py-12">
+      <ul class="flex items-center justify-start w-full xl:w-[400px] gap-x-4 flex-wrap">
+        <li> <a href="index.html" class="hover:text-blue-600 hover:underline">Products</a> </li>
+        <li> <a href="services.html" class="hover:text-blue-600 hover:underline">Services</a> </li>
+        <li> <a href="investor.html" class="hover:text-blue-600 hover:underline">Investor</a> </li>
+        <li> <a href="reseller.html" class="hover:text-blue-600 hover:underline">Reseller</a> </li>
+      </ul>
+
+      <p class="w-full xl:text-right">
+        <span class="text-gray-700 text-base"> All Rights Reserved © Bangladeshi Software 2022 <span>SHAMIMLEM.</span>
+      </p>
+    </div>
+
+  </footer>
+  <!-- Footer -->
+
+
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
